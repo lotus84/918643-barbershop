@@ -28,6 +28,11 @@ body {
   margin-bottom: 75px;
 }
 
+.inner-page .main-header {
+  margin-bottom: 50px;
+  background-color: #000000;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,10 +67,23 @@ a {
   background-color: transparent;
 }
 
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .main-header-logo {
   order: 2;
   width: 368px;
   height: 153px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -93,6 +111,10 @@ a {
 
 .user-navigation {
   width: 140px;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -194,10 +216,18 @@ a {
 .page-title {
   font-size: 30px;
   line-height: 42px;
+  
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 }
 
 .breadcrumbs {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs a {
@@ -211,6 +241,15 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
 }
 
 .filter fieldset {
@@ -238,13 +277,30 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .catalog-item {
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -279,6 +335,9 @@ a {
 
 .pagination-list {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-item a {
@@ -307,6 +366,10 @@ a {
   background-color: #ffffff;
 }
 
+.product-photos {
+  width: 460px;
+}
+
 .product-photo-preview {
   list-style: none;
 }
@@ -331,6 +394,10 @@ a {
   background-color: #e5e5e5;
 }
 
+.product-info {
+  width: 390px;
+}
+
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
@@ -350,6 +417,10 @@ a {
 
   margin-top: 65px;
   padding: 60px 0;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
 }
 
 .main-footer .container {
